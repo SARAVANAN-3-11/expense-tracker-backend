@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 
 from db import Base, engine
-from  import models, schemas
+import models, schemas
 from dependencies import get_db
 
 # ---------------- APP ----------------
