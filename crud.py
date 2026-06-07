@@ -1,6 +1,7 @@
 from sqlalchemy.orm import Session
-from .models import User, Expense
-from .security import hash_password, verify_password
+from sqlalchemy.orm import Session
+from models import User, Expense
+from security import hash_password, verify_password
 
 
 # ---------------- USER ----------------
