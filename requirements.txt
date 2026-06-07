@@ -5,3 +5,4 @@ psycopg2-binary
 passlib[bcrypt]
 pydantic
 python-multipart
+bcrypt==4.3.0
