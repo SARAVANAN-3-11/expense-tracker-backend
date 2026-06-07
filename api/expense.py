@@ -4,11 +4,17 @@ from typing import Optional, List
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from backend.app.db.database import get_db
-from backend.app.core.security import get_current_user
-from backend.app.models.user import User
-from backend.app.schemas.expense import ExpenseCreate, ExpenseUpdate, ExpenseResponse
-from backend.app.services.expense_service import (
+from datetime import date
+from typing import Optional, List
+
+from fastapi import APIRouter, Depends, Query
+from sqlalchemy.orm import Session
+
+# --- FIXED FLAT IMPORTS TO MATCH HER REPO ---
+from dependencies import get_db, get_current_user  
+from models import User
+from schemas import ExpenseCreate, ExpenseUpdate, ExpenseResponse
+from crud import (
     create_expense,
     get_expenses,
     get_expense_by_id,
